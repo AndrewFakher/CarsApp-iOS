@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7h-kC-TJS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Model PhotosVC-->
+        <scene sceneID="lbF-Aw-IT0">
+            <objects>
+                <viewController storyboardIdentifier="ImageDetailsVC" id="w7h-kC-TJS" customClass="ModelPhotosVC" customModule="Cars_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEZ-8F-pfK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lCV-fR-zFy">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KSV-sy-ZHo">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tkx-09-QpR"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tkx-09-QpR" firstAttribute="trailing" secondItem="lCV-fR-zFy" secondAttribute="trailing" id="0mo-zX-AHp"/>
+                            <constraint firstItem="tkx-09-QpR" firstAttribute="bottom" secondItem="lCV-fR-zFy" secondAttribute="bottom" id="Mit-Is-2WM"/>
+                            <constraint firstItem="lCV-fR-zFy" firstAttribute="leading" secondItem="tkx-09-QpR" secondAttribute="leading" id="Rf2-1x-Og5"/>
+                            <constraint firstItem="lCV-fR-zFy" firstAttribute="top" secondItem="tkx-09-QpR" secondAttribute="top" constant="40" id="WwY-RE-Yhy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="modelImagesCollection" destination="lCV-fR-zFy" id="3Xh-De-I4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ou6-aT-XDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783.2" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>
